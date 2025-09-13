@@ -6,21 +6,44 @@
     <font name="inter" src="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" />
     
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-inter background: linear-gradient(135deg, #1f2937, #111827); color: #f9fafb; height: 100vh; display: flex; align-items: center; justify-content: center; }
-        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
-        .center-box { 
-            text-align: center; 
-            padding: 2rem 3rem; 
-            background: rgba(255, 255, 255, 0.05); 
-            border: 1px solid rgba(255, 255, 255, 0.1); 
-            border-radius: 16px; 
-            backdrop-filter: blur(10px); 
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); 
-            animation: fadeIn 1s ease-out; 
+        body { 
+            bg-gradient-to-br bg-slate-800 text-gray-100 
+            flex items-center justify-center 
+            min-h-screen p-4 
         }
-        h1 { font-size: 2rem; font-weight: 600; margin-bottom: 1rem; }
-        p { font-size: 1.1rem; opacity: 0.9; }
+        
+        .center-box { 
+            bg-slate-700 bg-opacity-80 
+            border border-slate-600 
+            rounded-2xl p-8 
+            text-center 
+            max-w-md mx-auto
+            backdrop-blur-sm
+        }
+        
+        .center-box:hover { 
+            bg-slate-600 bg-opacity-90 
+            border-slate-500 
+        }
+        
+        h1 { 
+            text-3xl font-inter font-bold 
+            text-gray-100 mb-4 
+        }
+        
+        p { 
+            text-lg text-gray-300 
+            leading-relaxed 
+        }
+        
+        .pulse-dot {
+            bg-blue-500 w-2 h-2 rounded-full
+            inline-block mx-1
+        }
+        
+        .pulse-dot:nth-child(1) { bg-blue-400 }
+        .pulse-dot:nth-child(2) { bg-blue-500 }
+        .pulse-dot:nth-child(3) { bg-blue-600 }
     </style>
 </head>
 
@@ -28,5 +51,11 @@
     <div class="center-box">
         <h1>I'm still making this</h1>
         <p>This website is still being made, come back later or so</p>
+        
+        <div style="mt-6 flex justify-center items-center">
+            <span class="pulse-dot"></span>
+            <span class="pulse-dot"></span>
+            <span class="pulse-dot"></span>
+        </div>
     </div>
 </body>
