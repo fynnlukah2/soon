@@ -6,12 +6,21 @@
     <font name="inter" src="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" />
     
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; } 
-        body { font-inter; background: linear-gradient(135deg, #1f2937, #111827); color: #f9fafb; height: 100vh; flex; items-center; justify-center; } 
-        .center-box { text-center; p-8; bg-[rgba(255,255,255,0.05)]; border; border-[rgba(255,255,255,0.1)]; rounded-2xl; backdrop-filter: blur(10px); box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); animation: fadeIn 1s ease-out; } 
-        h1 { text-2xl; font-600; mb-4; } 
-        p { text-lg; opacity: 0.9; } 
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-inter background: linear-gradient(135deg, #1f2937, #111827); color: #f9fafb; height: 100vh; display: flex; align-items: center; justify-content: center; }
         @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        .center-box { 
+            text-align: center; 
+            padding: 2rem 3rem; 
+            background: rgba(255, 255, 255, 0.05); 
+            border: 1px solid rgba(255, 255, 255, 0.1); 
+            border-radius: 16px; 
+            backdrop-filter: blur(10px); 
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); 
+            animation: fadeIn 1s ease-out; 
+        }
+        h1 { font-size: 2rem; font-weight: 600; margin-bottom: 1rem; }
+        p { font-size: 1.1rem; opacity: 0.9; }
     </style>
 </head>
 
